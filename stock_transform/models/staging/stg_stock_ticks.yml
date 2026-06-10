@@ -1,0 +1,23 @@
+version: 2
+
+models:
+  - name: stg_stock_ticks
+    description: "Cleaned and deduplicated stock ticks from Bronze layer"
+    columns:
+      - name: symbol
+        description: "Stock ticker symbol"
+        tests:
+          - not_null
+          - accepted_values:
+              values: ['AAPL', 'GOOGL', 'TSLA', 'MSFT', 'AMZN']
+      - name: close
+        description: "Closing price"
+        tests:
+          - not_null
+      - name: volume
+        description: "Trade volume"
+        tests:
+          - not_null
+      - name: tick_time
+        tests:
+          - not_null

@@ -1,0 +1,44 @@
+[0m17:13:00.295974 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001E06CB5A850>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001E06CAEFB50>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001E06CB5BE10>]}
+
+
+============================== 17:13:00.338778 | bb23c69c-1e19-4556-9730-1e328be93156 ==============================
+[0m17:13:00.338778 [info ] [MainThread]: Running with dbt=1.11.10
+[0m17:13:00.341203 [debug] [MainThread]: running dbt with arguments {'version_check': 'True', 'no_print': 'None', 'static_parser': 'True', 'target_path': 'None', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'printer_width': '80', 'write_json': 'True', 'empty': 'None', 'log_cache_events': 'False', 'introspect': 'True', 'cache_selected_only': 'False', 'log_format': 'default', 'debug': 'False', 'fail_fast': 'False', 'partial_parse': 'True', 'send_anonymous_usage_stats': 'True', 'quiet': 'False', 'warn_error': 'None', 'profiles_dir': 'C:\\Users\\lenovo\\.dbt', 'use_colors': 'True', 'invocation_command': 'dbt init stock_transform', 'indirect_selection': 'eager', 'use_experimental_parser': 'False', 'log_path': 'logs'}
+[0m17:13:00.632948 [info ] [MainThread]: Creating dbt configuration folder at C:\Users\lenovo\.dbt
+[0m17:13:00.653157 [debug] [MainThread]: Starter project path: C:\Users\lenovo\stock-pipeline\env\Lib\site-packages\dbt\include\starter_project
+[0m17:13:00.840830 [info ] [MainThread]: 
+Your new dbt project "stock_transform" was created!
+
+For more information on how to configure the profiles.yml file,
+please consult the dbt documentation here:
+
+  https://docs.getdbt.com/docs/configure-your-profile
+
+One more thing:
+
+Need help? Don't hesitate to reach out to us via GitHub issues or on Slack:
+
+  https://community.getdbt.com/
+
+Happy modeling!
+
+[0m17:13:00.845011 [info ] [MainThread]: Setting up your profile.
+[0m17:13:44.096779 [info ] [MainThread]: Profile stock_transform written to C:\Users\lenovo\.dbt\profiles.yml using target's sample configuration. Once updated, you'll be able to start developing with dbt.
+[0m17:13:44.100788 [debug] [MainThread]: Command `dbt init` succeeded at 17:13:44.100788 after 44.13 seconds
+[0m17:13:44.102788 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001E06CAF3610>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001E06CA538D0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001E0669BFE90>]}
+[0m17:13:44.103790 [debug] [MainThread]: Flushing usage events
+[0m17:13:46.407457 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m19:39:39.475303 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001C8E6B500D0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001C8E6B53850>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001C8E6BF2A10>]}
+
+
+============================== 19:39:39.527277 | a2e5f2cd-47e7-44fb-9b04-f1a6be64f1a9 ==============================
+[0m19:39:39.527277 [info ] [MainThread]: Running with dbt=1.11.10
+[0m19:39:39.532278 [debug] [MainThread]: running dbt with arguments {'version_check': 'True', 'no_print': 'None', 'static_parser': 'True', 'target_path': 'None', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'printer_width': '80', 'write_json': 'True', 'empty': 'None', 'log_cache_events': 'False', 'introspect': 'True', 'cache_selected_only': 'False', 'fail_fast': 'False', 'debug': 'False', 'log_format': 'default', 'profiles_dir': 'C:\\Users\\lenovo\\.dbt', 'send_anonymous_usage_stats': 'True', 'quiet': 'False', 'warn_error': 'None', 'partial_parse': 'True', 'use_colors': 'True', 'invocation_command': 'dbt docs generate', 'indirect_selection': 'eager', 'use_experimental_parser': 'False', 'log_path': 'logs'}
+[0m19:39:39.534277 [error] [MainThread]: Encountered an error:
+Runtime Error
+  No dbt_project.yml found at expected path C:\Users\lenovo\stock-pipeline\dbt_project.yml
+  Verify that each entry within packages.yml (and their transitive dependencies) contains a file named dbt_project.yml
+  
+[0m19:39:39.540696 [debug] [MainThread]: Command `dbt docs generate` failed at 19:39:39.540696 after 0.59 seconds
+[0m19:39:39.541697 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001C8E6CC3A50>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001C8E6BF3950>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001C8E6BF3F50>]}
+[0m19:39:39.542697 [debug] [MainThread]: Flushing usage events
